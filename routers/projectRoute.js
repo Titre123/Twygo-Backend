@@ -1,5 +1,6 @@
 const express = require('express');
 const {validateAccessToken} = require('../midddlewares/jwt.middleware');
+const {validateAdminAccessToken} = require('../midddlewares/jwt_admin.middleware');
 const {projectController} = require('../controllers/projectController');
 const multer = require('multer');
 

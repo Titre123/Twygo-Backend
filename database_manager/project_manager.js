@@ -52,6 +52,15 @@ class Project {
       const data = await collection.deleteMany(query);
     }
   }
+
+  // count all projects
+  static async countProjects(query) {
+    if(dbClient.isAlive() === true) {
+      const collection = dbClient.db.collection('projects');
+      const count = await collection.countDocuments(query);
+      return count;
+    }
+  }
 }
 
 module.exports = {Project};

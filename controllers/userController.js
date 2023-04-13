@@ -140,6 +140,10 @@ class userController {
   static async getNumOfUsers() {
     
   }
+
+  static async signUserOut() {
+    
+  }
 }
 
 module.exports = {userController};
