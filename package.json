@@ -17,7 +17,9 @@
     "multer": "^1.4.5-lts.1",
     "node-stripe": "^1.0.9",
     "nodemailer": "^6.6.3",
-    "onesignal": "^0.1.2"
+    "onesignal": "^0.1.2",
+    "sha1": "^1.1.1",
+    "twilio": "^4.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
