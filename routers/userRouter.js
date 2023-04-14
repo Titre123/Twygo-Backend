@@ -1,6 +1,6 @@
 const express = require('express');
-const {validateAccessToken} = require('../midddlewares/jwt.middleware');
 const {userController} = require('../controllers/userController');
+const {validateSuperAdminToken} = require('../midddlewares/jwt_superadmin.middleware');
 const multer = require('multer');
 
 // Create an instance of the multer middleware
